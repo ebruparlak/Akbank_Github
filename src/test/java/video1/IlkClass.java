@@ -6,23 +6,14 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import javax.swing.*;
 import java.time.Duration;
-
 import java.awt.*;
-import java.io.File;
 import org.monte.media.Format;
 import org.monte.media.math.Rational;
 import org.monte.screenrecorder.ScreenRecorder;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import static org.monte.media.AudioFormatKeys.*;
 import static org.monte.media.VideoFormatKeys.*;
 
-import static io.netty.handler.codec.rtsp.RtspHeaders.Values.URL;
 
 public class IlkClass {
     private ScreenRecorder screenRecorder;
@@ -75,7 +66,7 @@ public class IlkClass {
         WebElement kontrolTable = driver.findElement(By.xpath("//section/div[2]/table/tbody/tr[2]/td"));
         kontrolTable.getText();
 
-        if (kontrolTable.getText() == "Aylık Maliyet Oranı"){
+        if (kontrolTable.getText() == "Aylık Maliyet Oranı" ){
             Thread.sleep(1000);
         }
 
